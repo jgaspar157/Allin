@@ -16,16 +16,4 @@ if user_input:
     try:
         with st.spinner("Generating response..."):
             response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
-                messages=[
-                    {"role": "system", "content": "You are a helpful assistant."},
-                    {"role": "user", "content": user_input}
-                ],
-                max_tokens=150,
-                temperature=0.7,
-            )
-            answer = response['choices'][0]['message']['content']
-            st.success("Response generated!")
-            st.write(answer)
-    except Exception as e:
-        st.error(f"Error: {e}")
+                model="gpt-3
