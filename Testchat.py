@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # Set OpenAI API key
-openai.api_key = st.secrets[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]  # Store securely in Streamlit secrets
+openai.api_key = st.secrets[QvfpyQY5BYdPmcfghbl_cwvV9rP0DKgdua0YQITedUJjiVt8MA]  # Store securely in Streamlit secrets
 
 # Streamlit app UI
 st.title("ChatGPT Dynamic Answers App")
